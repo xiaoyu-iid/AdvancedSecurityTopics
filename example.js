@@ -1,19 +1,21 @@
+// Adapted from https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName
+
 function getAllParaElems() {
     var allParas = document.getElementsByTagName('p');
     var num = allParas.length;
-    alert('There are ' + num + ' paragraph in this document');
+    alert('There are ' + num + ' paragraphs in this document');
 }
 
-function div1ParaElems() {
-    var div1 = document.getElementById('div1');
-    var div1Paras = div1.getElementsByTagName('p');
-    var num = div1Paras.length;
-    alert('There are ' + num + ' paragraph in #div1');
+function blueBoxParaElems() {
+    var blueBox = document.getElementById('blueBox');
+    var blueBoxParas = blueBox.getElementsByTagName('p');
+    var num = blueBoxParas.length;
+    alert('There are ' + num + ' paragraphs in blue box');
 }
 
-function div2ParaElems() {
-    var div2 = document.getElementById('div2');
-    var div2Paras = div2.getElementsByTagName('p');
-    var num = div2Paras.length;
-    alert('There are ' + num + ' paragraph in #div2');
+function redBoxParaElems() {
+    var redBox = document.getElementById('redBox');
+    var redBoxParas = redBox.getElementsByTagName('p');
+    var num = redBoxParas.length;
+    alert('There are ' + num + ' paragraphs in red box');
 }

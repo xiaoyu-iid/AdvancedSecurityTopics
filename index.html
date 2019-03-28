@@ -1,0 +1,56 @@
+<!-- Adapted from https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>getElementsByTagName example</title>
+  <script src="example.js"></script>
+</head> 
+<body style="border: solid green 5px; width: 700px">
+  <p>
+    Outer space joke 1: <br>
+    Q: What is a spaceman’s favorite chocolate?<br>
+    A: A marsbar!<br>
+  </p>
+  <p>
+    Outer space joke 2: <br>
+    Q: Why did the sun go to school?<br>
+    A: To get brighter!<br>
+  </p>
+
+  <div id="blueBox" style="border: solid blue 5px; width: 650px">
+    <p>
+      Outer space joke 3: <br>
+      Q: Q:What kind of music do planets sing?<br>
+      A:Neptunes!<br>
+    </p>
+
+    <p>(placeholder for another joke)</p>
+    <p>(placeholder for another joke)</p>
+
+    <div id="redBox" style="border: solid red 5px; width: 600px">
+      <p>
+        Outer space joke 4:<br>
+        Q: What is an astronauts favorite key on the keyboard?<br>
+        A: The space bar!<br>
+      </p>
+
+      <p>(placeholder for another joke)</p>
+
+    </div>
+  </div>
+
+  <p>(placeholder for another joke)</p>
+  <p>(placeholder for another joke)</p>
+
+  <button onclick="getAllParaElems();">
+    show all p elements in document</button><br />
+
+  <button onclick="blueBoxParaElems();">
+    show all p elements in blue box</button><br />
+
+  <button onclick="redBoxParaElems();">
+    show all p elements in red box</button>
+
+</body>
+</html>
